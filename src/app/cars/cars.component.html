@@ -1,0 +1,16 @@
+
+<label >Car Name</label>
+
+<input type="text" class="form-control" (input)="onUpdateCarName($event)">
+<p> {{ CarName  }} </p>
+<button class="btn btn-primary" [disabled]="!allowNewCar"(click)="onCreateCar()" >Add Car</button>
+
+
+<p>{{ carAvailableStatus }}</p>
+<p> {{ allowNewCar }}</p>
+
+
+
+<app-car></app-car>
+
+<app-car></app-car>
